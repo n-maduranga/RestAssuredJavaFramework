@@ -45,10 +45,15 @@ public class gorestAPITest {
 		//response.then().log().all();
 		
 		int id=response.then().extract().path("id");
+		String name = response.then().extract().path("name");
+		
 		System.out.println("Generated ID is:"+id);
+		System.out.println("Generated Name is:"+name);
 		//Set the id using setAttribute
 		
-		context.setAttribute("user_id", id); //Refer test level
+		//Refer test level
+		context.setAttribute("user_id", id); 
+		context.setAttribute("user_name", name);
 	   	// set userid
 		//context.setAttribute("user_id", id); Refer test level
 		//context.getSuite().setAttribute("user_id", id);//suite level
@@ -58,10 +63,13 @@ public class gorestAPITest {
 	@Test(priority=2)
 	public void testGetUserById(ITestContext context) {
 		
-		int id = (int) context.getAttribute("user_id");
+		Integer id = (Integer) context.getAttribute("user_id");
 		Response response = UserEndPoints.getUserRequest(BearerToken,id);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
+		String ActualName = response.then().extract().path("name");
+		String ExpectedName = (String) context.getAttribute("user_name");
+		Assert.assertEquals(ActualName, ExpectedName);
 		
 	}
 }
