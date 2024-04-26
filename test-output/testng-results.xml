@@ -1,38 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-26T00:45:34 BST" name="Default suite" finished-at="2024-04-26T00:45:40 BST" duration-ms="6011">
+  <suite started-at="2024-04-26T23:38:01 BST" name="Default suite" finished-at="2024-04-26T23:38:09 BST" duration-ms="7792">
     <groups>
     </groups>
-    <test started-at="2024-04-26T00:45:34 BST" name="Default test" finished-at="2024-04-26T00:45:40 BST" duration-ms="6011">
+    <test started-at="2024-04-26T23:38:01 BST" name="Default test" finished-at="2024-04-26T23:38:09 BST" duration-ms="7792">
       <class name="api.gorest.tests.gorestAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.gorest.tests.gorestAPITest@48f2bd5b]" started-at="2024-04-26T00:45:34 BST" name="setup" finished-at="2024-04-26T00:45:35 BST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.gorest.tests.gorestAPITest@a1153bc]" started-at="2024-04-26T23:38:01 BST" name="setup" finished-at="2024-04-26T23:38:01 BST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateUser(org.testng.ITestContext)[pri:0, instance:api.gorest.tests.gorestAPITest@48f2bd5b]" started-at="2024-04-26T00:45:35 BST" name="testCreateUser" finished-at="2024-04-26T00:45:39 BST" duration-ms="4784" status="PASS">
+        <test-method signature="testCreateUser(org.testng.ITestContext)[pri:0, instance:api.gorest.tests.gorestAPITest@a1153bc]" started-at="2024-04-26T23:38:01 BST" name="testCreateUser" finished-at="2024-04-26T23:38:06 BST" duration-ms="4890" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@350d3f4d]]>
+                <![CDATA[org.testng.TestRunner@73844119]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testGetUserById(org.testng.ITestContext)[pri:2, instance:api.gorest.tests.gorestAPITest@48f2bd5b]" started-at="2024-04-26T00:45:39 BST" name="testGetUserById" finished-at="2024-04-26T00:45:40 BST" duration-ms="757" status="PASS">
+        <test-method signature="testGetUserById(org.testng.ITestContext)[pri:2, instance:api.gorest.tests.gorestAPITest@a1153bc]" started-at="2024-04-26T23:38:06 BST" name="testGetUserById" finished-at="2024-04-26T23:38:07 BST" duration-ms="813" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@350d3f4d]]>
+                <![CDATA[org.testng.TestRunner@73844119]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserById -->
+        <test-method signature="testUpdateUser(org.testng.ITestContext)[pri:3, instance:api.gorest.tests.gorestAPITest@a1153bc]" started-at="2024-04-26T23:38:07 BST" name="testUpdateUser" finished-at="2024-04-26T23:38:08 BST" duration-ms="807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73844119]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+        <test-method signature="testDeleteUser(org.testng.ITestContext)[pri:4, instance:api.gorest.tests.gorestAPITest@a1153bc]" started-at="2024-04-26T23:38:08 BST" name="testDeleteUser" finished-at="2024-04-26T23:38:09 BST" duration-ms="800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73844119]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
       </class> <!-- api.gorest.tests.gorestAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -29,9 +29,35 @@ public class UserEndPoints {
 		 	.headers("Authorization","Bearer "+BearerToken)
 		 	.pathParam("id", id)
 		.when()
-			.get("https://gorest.co.in/public/v2/users/{id}");
+			.get(Routes.getURL);
 			return response;
 		
+	}
+	
+	public static Response updateUserRequest(UserPOJO payloadUp,String BearerToken,int id) {
+		
+	Response response=	given()
+			
+			.headers("Authorization","Bearer "+BearerToken)
+			.contentType("application/json")
+			.pathParam("id",id)
+			.body(payloadUp)
+		
+		
+	.when()
+		.put(Routes.updatetURL);
+		return response;
+		
+	}
+	
+	public static Response DeleteUser(String BearerToken,int id) {
+		
+		Response response = given()
+			.headers("Authorization","Bearer "+BearerToken)
+			.pathParam("id", id)
+		.when()
+			.delete(Routes.deleteURL);
+		return response;
 	}
 	
 	

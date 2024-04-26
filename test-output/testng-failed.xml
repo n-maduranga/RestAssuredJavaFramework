@@ -5,7 +5,9 @@
     <classes>
       <class name="api.gorest.tests.gorestAPITest">
         <methods>
+          <include name="testUpdateUser" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="testGetUserById" invocation-numbers="0"/>
           <include name="testCreateUser" invocation-numbers="0"/>
         </methods>
       </class> <!-- api.gorest.tests.gorestAPITest -->
